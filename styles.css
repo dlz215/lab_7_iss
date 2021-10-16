@@ -1,0 +1,6 @@
+/* Need to set dimensions of iss-map div because dimensions are 0x0 by default*/
+#iss-map {
+    height: 600px;
+    width: 750px;
+    border: 1px black solid;
+}

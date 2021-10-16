@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Where is the ISS?</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+
+    <!-- Leaflet Javascript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Custom Javascript  -->
+    <script async defer src="fetch.js"></script>
+</head>
+
+<body>
+<h1>Where is the International Space Station?</h1>
+
+<p>This page will update every 10 seconds</p>
+
+<p>As of <span id="time"></span> the ISS is located over the following coordinates:</p>
+
+<!-- Latitude & Longitude display -->
+<div>
+    <p>ISS Latitude: <span id="iss-lat"></span></p>
+    <p>ISS Longitude: <span id="iss-long"></span></p>
+</div>
+
+<!-- Container for Leaflet map -->
+<div id="iss-map"></div>
+
+<p>iss by Viktor Korobkov from the Noun Project</p>
+</body>
+
+</html>
